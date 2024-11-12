@@ -1,0 +1,128 @@
+/* Website colour scheme: https://paletton.com/#uid=60o0p0kw0w0jyC+oRxVy4oIDfjr 
+Remove background of image: https://www.remove.bg/ */
+body {
+    background-color: #FD383E;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    /* centres logo */
+    margin-right: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+article {
+    margin: 50px;
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+h2 {
+    color: #006350;
+}
+
+h3 {
+    color: #006350;
+}
+
+
+#mary {
+    width: 150px;
+}
+
+figure img {
+    width: 200px;
+    float: left;
+    margin: 0 50px 0 0;
+}
+
+table {
+    /* centres table */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td img {
+    width: 235px;
+}
+
+tr th {
+    font-size: 30px;
+    color: #006350;
+
+}
+
+td {
+    padding: 30px;
+}
+
+td:hover {
+    background-color: #48BAA4;
+}
+
+footer {
+    background-color: #ffcc00;
+}
+
+.contacts {
+    width: 35px;
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-icon {
+    width: 20px;
+    /* Set the width of the icons */
+    height: 20px;
+    /* Set the height of the icons */
+    vertical-align: middle;
+    /* Align the icons vertically with the text */
+    margin-right: 5px;
+    /* Add some space between the icon and the text */
+}
+
+a {
+    color: blue;
+    /* we can change the text color to something else if you want */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: darkblue;
+    /* and also this */
+}

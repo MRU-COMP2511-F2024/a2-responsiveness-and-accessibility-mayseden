@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Shweta Limbu, Mary Obi-Azubuike">
+
+    <title>Our Chips Quest: Final</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="style/page3.css" />
+</head>
+
+<body>
+    <header>
+        <img class="logo" src=images/logo.png alt="Our Chips Quest Logo" title="Our Chips Quest">
+
+        <nav>
+            <ul>
+                <li><a href="page2.html">Previous Page</a></li>
+                <li><a href="#event">Chips Fiesta Day</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#dream-chips">Dream Chips</a></li>
+                <li><a href="#instagram">Instagram Posts</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <h2 id="event">🎉 Chips Fiesta Day! 🎉</h2>
+        <p>
+            Join us for our exciting Chips Fiesta Day on <span>Saturday, November 2nd!!!</span> Celebrate with us
+            and enjoy exclusive discounts, fun activities, and delicious chip tastings!
+        </p>
+
+        <img class="party" src="images/party.jpg" alt="Balloons in a party" title="Exciting party!">
+        <!-- https://unsplash.com/photos/selective-focus-photography-of-assorted-color-balloons-Hli3R6LKibo -->
+
+        <h3>Event Details:</h3>
+        <ul>
+            <li><span>Date:</span> Saturday, November 2nd,2024</li>
+            <li><span>Time:</span> 12 PM - 3 PM</li>
+            <li><span>Location:</span> Chips Headquarters, 456 Snack Lane, Flavor Town</li>
+        </ul>
+
+        <h3>What to Expect:</h3>
+        <ul>
+            <li>🎊 Exclusive 20% discount on all chip products!</li>
+            <li>🌮 Free samples of our new Zesty Taco Chips!</li>
+            <li>🎶 Music and entertainment!</li>
+            <li>🎁 Raffle prizes and giveaways every hour!</li>
+            <li>📸 Photo booth with fun chip-themed props!</li>
+        </ul>
+
+        <h3>Don't Miss Out!</h3>
+        <p>
+            Bring your friends and family for a day filled with flavor and fun! Follow us on Instagram for sneak peeks
+            and updates leading up to the event. We can't wait to see you there! ❤️
+        </p>
+        <p>Register below and we will send you more information!</p>
+
+        <p>Are you joining us?<br>
+            <input type="checkbox" id="event-in" name="vehicle1" value="coming">
+            <label for="event-in"><img src="images/yes.png" alt="Picture of a woman saying yes"
+                    title="I am coming!"></label>
+            <!-- https://clipart-library.com/clipart/happy-yes-cliparts-10.htm -->
+            <input type="checkbox" id="event-out" name="vehicle2" value="not-coming">
+            <label for="event-out"><img src="images/no.png" alt="Picture of a person lying on the floor saying no"
+                    title="I can't make it!"></label><br>
+            <!-- https://mahatmadas.com/wp-content/uploads/2015/02/i-cant.jpg -->
+        </p>
+    </article>
+
+    <main>
+        <forms action="mailto:slimb613@mtroyal.ca" method="post">
+            <fieldset>
+                <legend id="register">Register here!</legend>
+
+                <p>Salutation:<br>
+                    <input type="radio" id="miss" name="salutation" value="Miss" checked required>
+                    <label for="miss">Miss</label><br>
+                    <input type="radio" id="mrs" name="salutation" value="Mrs">
+                    <label for="mrs">Mrs</label><br>
+                    <input type="radio" id="mr" name="salutation" value="Mr">
+                    <label for="mr">Mr</label>
+                </p>
+
+                <p><label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="first-name" autofocus required>
+                </p>
+
+                <p><label for="last-name">Last name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </p>
+
+                <p><label for="phone-number">Phone number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                        placeholder="123 456 7890" required>
+                </p>
+
+                <p><label for="email">Email:</label>
+                    <input type="email" id="email" name="email" pattern=".+@gmail\.ca" placeholder="name@gmail.com"
+                        required>
+                </p>
+
+                <div>
+                    Is there anything else you would love to share?<br>
+                    <p><label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </p>
+                </div>
+
+                <p><label for="body"></label>Content:
+                    <textarea id="body" name="body" required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit"><input type="reset">
+                </p>
+
+            </fieldset>
+        </forms>
+    </main>
+
+    <article>
+        <h2 id="dream-chips">Dream Chips</h2>
+
+        <h3>Design</h3>
+        <p>We are fed up with opening a bag of chips only to discover that it's only 20% full.<br> We want to create a chip
+            that stays true to its customers, delivering the satisfaction of being completely full when opened.</br>
+        <p>We are still at our ideation stage, but here is the vision for our dream chips!</p>
+        <img class="dream-chips" src="images/chips/dream chips one.jpg" alt="Dream Chips" title="Dream Chips">
+        <img class="dream-chips2" src="images/chips/dream chips 2.webp" alt="Dream Chips 2" title="Dream Chips 2">
+        <section id="sustainability">
+            <h2>🌱 Our Focus on Sustainability</h2>
+            <p>At Chip Quest, we believe in creating snacks that are not only delicious but also environmentally friendly. Here’s how we do it:</p>
+            <ul>
+                <li>🌍 Sourcing ingredients from local farms to reduce carbon footprint.</li>
+                <li>♻️ Using biodegradable packaging to minimize waste.</li>
+                <li>💧 Implementing water-saving techniques in our production process.</li>
+            </ul>
+            <img class="sustainability" src="images/sustainable farming.jpg" alt="Sustainable Farming">
+            <!--https://www.jerseygirlorganics.co.nz/post/10-sustainable-farming-practices-and-why-they-matter-->
+        </section>
+
+        <section id="flavor">
+            <h2>🍽️ Our Commitment to Flavor</h2>
+            <p>We know that great taste is key! Our chips are crafted with the finest ingredients to ensure every bite is bursting with flavor:</p>
+            <ul>
+                <li>🌶️ Unique flavor combinations that excite your taste buds.</li>
+                <li>🥔 Using only the best potatoes for that perfect crunch.</li>
+                <li>🍃 Infusing natural herbs and spices for a gourmet experience.</li>
+            </ul>
+            <img class="flavor" src="images/flavor.jpg" alt="Delicious Chips">
+            <!-- https://www.foodnavigator.com/Article/2019/07/31/Sensient-looks-to-past-present-and-future-for-flavour-inspiration#-->
+             
+        </section>
+    </article>
+
+    <article>
+        <p>Follow us on social media for exclusive discounts and giveaways!</p>
+        <h2 id="instagram">Instagram Posts</h2>
+
+        <table class="instagram-posts">
+            <tr>
+                <th>Top-notch Fiery Choice</th>
+                <th>Best Crunchiness Level</th>
+                <th>Perfectly Salted Chips</th>
+                <th>Superb Taco-tortilla Level</th>
+            </tr>
+            <tr>
+                <td><img src="images/chips/kurkure.png" alt="Chips Post 1"></td>
+                <td><img src="images/chips/ruffles.png" alt="Chips Post 2"></td>
+                <td><img src="images/chips/plantain.png" alt="Chips Post 3"></td>
+                <td><img src="images/chips/arriba.png" alt="Chips Post 4"></td>
+            </tr>
+            <tr>
+                <td>Spicy and delicious! These classic potato chips are a must-try! #ChipsQuest #SnackTime</td>
+                <td>Spice up your day with our zesty cheddar chips! Perfect for dipping! #ChipsLove #Spicy</td>
+                <td>Try the new flavor: Sea-Salt! A taste you won't forget!
+                    ...Plantain chips that bring out your inner child! #NewFlavor #ChipsQuest</td>
+                <td>Get ready to take your snacking game to the next level with Zesty Taco Chips! 🎉
+                    These chips are bursting with bold flavors that will transport your taste buds straight to a fiesta!
+                    🌶️
+                    #taco #tacotuesday #chipfiesta</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/ourchipsquest/p/DBnZFMlR2GP/" target="_blank">View on
+                        Instagram</a></td>
+                <td><a href="https://www.instagram.com/chips_quest/p/DBna5J-xGFV/" target="_blank">View on
+                        Instagram</a></td>
+                <td><a href="https://www.instagram.com/chips_quest/p/DBnbZdbRMeF/" target="_blank">View on
+                        Instagram</a></td>
+                <td><a href="https://www.instagram.com/chips_quest/p/DBpz2KVxWUX/" target="_blank">View on
+                        Instagram</a></td>
+            </tr>
+
+        </table>
+
+        <!-- <div class="instagram-posts">
+
+            <div class="post">
+                <img src="images/chips/kurkure.png" alt="Chips Post 1">
+                <p>Spicy and delicious! Our classic potato chips are a must-try! #ChipsQuest #SnackTime</p>
+                <a href="https://www.instagram.com/ourchipsquest/p/DBnZFMlR2GP/" target="_blank">View on Instragram</a>
+            </div>
+
+            <div class="post">
+                <img src="images/chips/ruffles.png" alt="Chips Post 2">
+                <p>Spice up your day with our zesty cheddar chips! Perfect for dipping! #ChipsLove #Spicy</p>
+                <a href="https://www.instagram.com/chips_quest/p/DBna5J-xGFV/" target="_blank">View on Instragram</a>
+            </div>
+
+            <div class="post">
+                <img src="images/chips/plantain.png" alt="Chips Post 3">
+                <p>Try our new flavor: Sea-Salt! A taste you won't forget!
+                    ...Plantain chips that bring out your inner child! #NewFlavor #ChipsQuest</p>
+                <a href="https://www.instagram.com/chips_quest/p/DBnbZdbRMeF/" target="_blank">View on Instragram</a>
+            </div>
+
+            <div class="post">
+                <img src="images/chips/arriba.png" alt="Chips Post 4">
+                <p>Get ready to take your snacking game to the next level with Zesty Taco Chips! 🎉
+                    These chips are bursting with bold flavors that will transport your taste buds straight to a fiesta!
+                    🌶️
+                    #taco #tacotuesday #chipfiesta</p>
+                <a href="https://www.instagram.com/chips_quest/p/DBpz2KVxWUX/" target="_blank">View on Instragram</a>
+            </div>
+
+        </div> -->
+
+    </article>
+
+
+    <footer>
+
+        <h2 id="contacts">Contact Us</h2>
+        <p>For inquiries and support, reach us at:</p>
+
+        <nav>
+            <ul>
+                <li><img class="contacts" src="images/contacts/email.png" alt="Email logo" title="Email">
+                    <!-- @roxiedesigns -->
+                    Email:<a href="mailto:support@ourchipsquest.ca"> support@ourchipsquest.ca</a></li>
+                <li><img class="contacts" src="images/contacts/phone.png" alt="Phone logo" title="Phone"
+                        class="contact-icon"><!-- @pixabay -->
+                    Phone:<a href="tel:+11234567890"> (123) 456-7890</a></li>
+                <li><img class="contacts" src="images/contacts/insta.png" alt="Instagram logo" title="Instagram">
+                    Instagram:<a href="https://www.instagram.com/chips_quest/#"> chips_quest</a></li>
+                <!-- @oksanavectorart --></li>
+            </ul>
+        </nav>
+
+        <img class="logo" src="images/logo.png" alt="Our Chips Quest Logo" title="Our Chips Quest">
+
+        <p class="copyright">&copy; 2024 Chips Quest. All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>
