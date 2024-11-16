@@ -82,3 +82,49 @@ footer {
 .copyright {
     text-align: center;
 }
+
+
+/* Small Devices */
+@media (max-width: 590px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #333; 
+    }
+
+    .menu-item {
+        padding: 15px;
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .hamburger {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .grid {
+        display: block; 
+    }
+}
+
+/* Medium Devices */
+@media (min-width: 591px) and (max-width: 790px) {
+    body {
+        background-color: #e0e0e0; 
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .grid-item { 
+        padding: 20px;
+        border: 1px solid;
+        text-align: center;
+    }
+}
