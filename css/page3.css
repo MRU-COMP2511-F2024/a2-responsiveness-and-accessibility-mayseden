@@ -170,6 +170,77 @@ footer {
 
 .copyright {
     text-align: center;
+
+}
+
+
+
+/* Small Devices (less than 590px) */
+@media (max-width: 589px) {
+    nav ul {
+        flex-direction: column; /* Vertical menu */
+        align-items: center; /* Center menu items */
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 5px 0; 
+    }
+
+    .dream-chips, .dream-chips2, .flavor, .sustainabilty {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .party {
+        width: 100%; 
+        float: none; 
+        margin: 0; 
+    }
+}
+
+/* Medium Devices (590px to 789px) */
+@media (min-width: 590px) and (max-width: 789px) {
+    nav ul {
+        flex-direction: row; /* Horizontal menu */
+        justify-content: center; /* Center menu items */
+    }
+
+    .instagram-posts {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+    }
+
+    .dream-chips, .dream-chips2 {
+        width: 45%;
+        height: auto;
+    }
+}
+
+/* Large Devices (790px and above) */
+@media (min-width: 790px) {
+    header, footer {
+        margin: 0 auto; 
+    }
+
+    .dream-chips, .dream-chips2 {
+        width: 700px; 
+    }
+
+    .party {
+        width: 500px; 
+    }
+
+    .instagram-posts {
+        width: 100%; 
+        border: 1px solid; 
+        border-color: #990004;
+    }
+
+    .instagram-posts img {
+        width: 200px; 
+    }
 }
 
 /* .instagram-posts {

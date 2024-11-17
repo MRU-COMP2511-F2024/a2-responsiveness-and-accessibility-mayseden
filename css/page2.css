@@ -29,6 +29,12 @@ nav ul li {
     margin: 0 15px;
 }
 
+
+
+nav ul.menu li {
+    margin: 5px 0;
+}
+
 nav a {
     text-decoration: none;
     color: #333;
@@ -86,11 +92,15 @@ footer {
 
 /* Small Devices */
 @media (max-width: 590px) {
-
     .menu {
         display: flex;
         flex-direction: column;
         background-color: #333; 
+    }
+
+    nav ul.menu {
+        display: flex;
+        flex-direction: column; /* Vertical menu for small devices */
     }
 
     .menu-item {
@@ -110,21 +120,27 @@ footer {
     }
 }
 
-/* Medium Devices */
-@media (min-width: 591px) and (max-width: 790px) {
-    body {
-        background-color: #e0e0e0; 
+/* Medium Devices 590px */
+@media (min-width: 590px) {
+    nav ul.menu {
+        flex-direction: row; /* Horizontal menu for medium devices */
+        justify-content: center; 
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* Large Devices (790px and above) */
+@media (min-width: 790px) {
+    .grid-container {
+        max-width: 790px; 
+        margin: 0 auto;
+        grid-template-columns: 1fr; 
     }
 
-    .grid-item { 
-        padding: 20px;
-        border: 1px solid;
-        text-align: center;
+    footer {
+        background-color: #e0e0e0; /* Different footer background for large devices */
     }
 }
