@@ -21,7 +21,21 @@ header {
     margin-right: auto;
 }
 
-nav ul {
+/* navigation at the top of page */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+nav a {
+    font-size: calc(16pt + 0.004vw);
+    text-decoration: none;
+    color: #333;
+}
+
+/* nav ul {
     list-style-type: none;
     padding: 0;
 }
@@ -29,12 +43,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-}
+} */
 
 article {
     margin: 50px;
@@ -53,40 +62,99 @@ h3 {
     color: #006350;
 }
 
+/* our introduction */
+#shweta {
+    grid-row: 1/2;
+}
 
 #mary {
     width: 150px;
+    grid-row: 1/2;
 }
 
 figure img {
     width: 200px;
-    float: left;
-    margin: 0 50px 0 0;
+    grid-column: 1/2;
 }
 
-table {
-    /* centres table */
-    margin-left: auto;
-    margin-right: auto;
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: repeat(1fr, 2);
 }
 
-td img {
-    width: 235px;
+.about-us ul {
+    grid-column: 2/3;
 }
 
-tr th {
+#mary-bio {
+    grid-row: 1/2;
+}
+
+#shweta-bio {
+    grid-row: 2/3;
+}
+
+/* our chips selection */
+
+.our-chips {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: repeat(1fr, 2);
+    margin: 10px;
+    grid-gap: 10px;
+}
+
+.our-chips div {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     font-size: 30px;
     color: #006350;
+}
+
+#spicy,
+#spicy-pic {
+    grid-column: 1/2;
+}
+
+#crunchy,
+#crunchy-pic {
+    grid-column: 2/3;
+}
+
+#salty,
+#salty-pic {
+    grid-column: 3/4;
+}
+
+#taco,
+#taco-pic {
+    grid-column: 4/5;
+}
+
+#spicy,
+#crunchy,
+#salty,
+#taco {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
 
 }
 
-td {
-    padding: 30px;
+.chips img {
+    grid-row: 2/3;
+    width: 250px;
+    display: flex;
+    justify-content: center;
 }
 
-td:hover {
+.our-chips:hover>.chips {
     background-color: #48BAA4;
 }
+
+/* footers */
 
 footer {
     background-color: #ffcc00;
@@ -125,4 +193,151 @@ a {
 a:hover {
     color: darkblue;
     /* and also this */
+}
+
+/* Small Devices */
+@media screen and (max-width: 590px) {}
+
+
+/* Medium Devices */
+@media screen and (min-width: 590px) and (max-width: 769px) {}
+
+/* Large Devices */
+@media screen and (min-width: 769px) {
+
+    /* general */
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: calc(16pt + 0.75vw);
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    section {
+        margin: 5%;
+    }
+
+    /* images */
+    article img,
+    figure img,
+    #mary {
+        width: 100%;
+        margin: 3%;
+    }
+
+    /* our intro */
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 4);
+        padding: 10%;
+    }
+
+    .about-us ul {
+        grid-column: 1/2;
+        margin: 5%;
+    }
+
+    #mary {
+        grid-row: 1/2;
+    }
+
+    #shweta {
+        grid-row: 3/4;
+    }
+
+    #mary-bio {
+        grid-row: 2/3;
+    }
+
+    #shweta-bio {
+        grid-row: 4/5;
+    }
+
+    /* our chips */
+    .our-chips {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr;
+    }
+
+
+    #spicy,
+    #crunchy,
+    #salty,
+    #taco {
+        font-size: 300%;
+        color: #007000;
+        grid-column: 1/2;
+        font-weight: bold;
+        font-style:italic;
+    }
+
+    #spicy {
+        grid-row: 1/2;
+    }
+
+    #spicy-pic {
+        grid-row: 2/3;
+    }
+
+    #crunchy {
+        grid-row: 3/4;
+    }
+
+    #crunchy-pic {
+        grid-row: 4/5;
+    }
+
+    #salty {
+        grid-row: 5/6;
+    }
+
+    #salty-pic {
+
+        grid-row: 6/7;
+    }
+
+    #taco {
+        grid-row: 7/8;
+    }
+
+    #taco-pic {
+        grid-row: 8/9;
+    }
+
+    .chips {
+        grid-column: 1/2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .chips img {
+        width: 100%;
+    }
+
+    .our-chips:hover>.chips {
+        background-color: #48BAA4;
+    }
+
+    /* footer */
+    
+        .nav-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: space-around;
+        }
+
+        .nav-footer div {
+            margin: 2%;
+        }
+
+        footer .logo {
+            margin-top: 15%;}
 }

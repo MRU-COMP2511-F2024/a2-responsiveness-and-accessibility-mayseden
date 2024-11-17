@@ -19,13 +19,12 @@
         <img class="logo" src="images/logo.png" alt="Our Chips Quest Logo" title="Our Chips Quest">
 
         <nav>
-            <ul>
-                <li><a href="#our-purpose">Our Purpose</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#our-chips">Our Chips</a></li>
-                <li><a href="#dream-chips">Dream Chips</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="page2.html">Next Page</a></li>
+            <a href="#our-purpose">Our Purpose</a>
+            <a href="#about-us">About Us</a>
+            <a href="#our-chips">Our Chips</a>
+            <a href="#dream-chips">Dream Chips</a>
+            <a href="#contacts">Contacts</a>
+            <a href="page2.html">Next Page</a>
             </ul>
         </nav>
     </header>
@@ -86,10 +85,15 @@
 
     <article>
         <h2 id="about-us">About Us</h2>
-        <figure>
-            <img id="mary" src="images/May.JPG" alt="Picture of Mary Obi-Azubuike" title="First CEO of Our Chips Quest">
-            <figcaption>Hello! I am Mary Obi-Azubuike, the first Co-Chief Executive Officer of Our Chips Quest.</figcaption>
-            <ul>
+
+        <section class="about-us">
+            <figure>
+                <img id="mary" src="images/May.JPG" alt="Picture of Mary Obi-Azubuike"
+                    title="First CEO of Our Chips Quest">
+                <figcaption>Hello! I am Mary Obi-Azubuike, the first Co-Chief Executive Officer of Our Chips Quest.
+                </figcaption>
+            </figure>
+            <ul id="mary-bio">
                 <li>Fashion
                     <ul>
                         <li>I have been to about 10 auditions in total, and did a fashion runway once!</li>
@@ -107,11 +111,13 @@
                     <p>Fun fact! I wrote and sold my first novel at the age of 12.</p>
                 </li>
             </ul>
-        </figure>
-        <figure>
-            <img id="shweta" src="images/pretty shweta.jpg" alt="Picture of Shweta Limbu" title="Second CEO of Our Chips Quest">
-            <figcaption>Hello! I am Shweta Limbu, the second Co-Chief Executive Officer of Our Chips Quest.</figcaption>
-            <ul>
+            <figure>
+                <img id="shweta" src="images/pretty shweta.jpg" alt="Picture of Shweta Limbu"
+                    title="Second CEO of Our Chips Quest">
+                <figcaption>Hello! I am Shweta Limbu, the second Co-Chief Executive Officer of Our Chips Quest.
+                </figcaption>
+            </figure>
+            <ul id="shweta-bio">
                 <li>Board games and mini brain quizzes
                     <ul>
                         <li>I just completed a 100 puzzle sudoku book!</li>
@@ -123,7 +129,7 @@
                     </ul>
                 </li>
             </ul>
-        </figure>
+        </section>
         <img class="logo" src="images/mru.png" alt="Mount Royal University Logo" title="Mount Royal University Logo">
         <!-- https://www.pngegg.com/en/png-zlbou -->
     </article>
@@ -133,32 +139,29 @@
         <div>We selected our top three favorite chips based on the categories below. Click on each one to discover why
             we chose them and where you can purchase them!
         </div>
-        <table>
-            <tr>
-                <th>Spicy</th>
-                <th>Crunchy</th>
-                <th>Salty</th>
-                <th>Taco</th>
-            </tr>
-            <tr>
-                <td><a href="page2.html"><img src="images/chips/kurkure-blur.png"
-                            alt="Blurred chosen spicy chip. Leads to more information on it."
-                            title="Explore Our Fiery Chip Selection!"></a></td>
-                <!-- https://www.walmart.ca/en/ip/Kurkure-Chilli-Chatka-Flavoured-Snacks/6000203054428 -->
-                <td><a href="page2.html"><img src="images/chips/ruffles-blur.png"
-                            alt="Blurred chosen crunchy chip. Leads to more information on it."
-                            title="Explore Our Crunchy Chip Selection!"></a></td>
-                <!-- https://www.walmart.ca/en/ip/Ruffles-Double-Crunch-Jalape-o-Cheddar-Flavoured-Potato-Chips/6000202690482 -->
-                <td><a href="page2.html"><img src="images/chips/plantain-blur.png"
-                            alt="Blurred chosen salty chip. Leads to more information on it."
-                            title="Explore Our Salty Chip Selection!"></a></td>
-                <!-- https://ca.iherb.com/pr/terra-real-vegetable-chips-plantains-sea-salt-5-oz-141-g/134601 -->
-                <td><a href="page2.html"><img src="images/chips/arriba-blur.png"
-                            alt="Blurred chosen Taco chip. Leads to more information on it."
-                            title="Explore Our Taco Chip Selection!"></a></td>
-                <!-- https://www.saveonfoods.com/sm/pickup/rsid/955/product/old-dutch-arriba-zesty-taco-tortilla-chips-id-00066343233178 -->
-            </tr>
-        </table>
+        <section class="our-chips">
+            <div id="spicy">Spicy</div>
+            <div class="chips"><a href="page2.html"><img id="spicy-pic" src="images/chips/kurkure-blur.png"
+                        alt="Blurred chosen spicy chip. Leads to more information on it."
+                        title="Explore Our Fiery Chip Selection!"></a></div>
+            <!-- https://www.walmart.ca/en/ip/Kurkure-Chilli-Chatka-Flavoured-Snacks/6000203054428 -->
+            <div id="crunchy">Crunchy</div>
+            <div class="chips"><a href="page2.html"><img id="crunchy-pic" src="images/chips/ruffles-blur.png"
+                        alt="Blurred chosen crunchy chip. Leads to more information on it."
+                        title="Explore Our Crunchy Chip Selection!"></a></div>
+            <!-- https://www.walmart.ca/en/ip/Ruffles-Double-Crunch-Jalape-o-Cheddar-Flavoured-Potato-Chips/6000202690482 -->
+
+            <div id="salty">Salty</div>
+            <div class="chips"><a href="page2.html"><img id="salty-pic" src="images/chips/plantain-blur.png"
+                        alt="Blurred chosen salty chip. Leads to more information on it."
+                        title="Explore Our Salty Chip Selection!"></a></div>
+            <!-- https://ca.iherb.com/pr/terra-real-vegetable-chips-plantains-sea-salt-5-oz-141-g/134601 -->
+            <div id="taco">Taco</div>
+            <div class="chips"><a href="page2.html"><img id="taco-pic" src="images/chips/arriba-blur.png"
+                        alt="Blurred chosen Taco chip. Leads to more information on it."
+                        title="Explore Our Taco Chip Selection!"></a></div>
+            <!-- https://www.saveonfoods.com/sm/pickup/rsid/955/product/old-dutch-arriba-zesty-taco-tortilla-chips-id-00066343233178 -->
+        </section>
     </article>
 
     <article>
@@ -191,18 +194,22 @@
         <h2 id="contacts">Contact Us</h2>
         <p>For inquiries and support, reach us at:</p>
 
-        <nav>
-            <ul>
-                <li><img class="contacts" src="images/contacts/email.png" alt="Email logo" title="Email">
-                    Email:<a href="mailto:support@ourchipsquest.ca"> support@ourchipsquest.ca</a></li>
-                <li><img class="contacts" src="images/contacts/phone.png" alt="Phone logo" title="Phone"><!-- @pixabay -->
-                    Phone:<a href="tel:+11234567890"> (123) 456-7890</a></li>
-                <li><img class="contacts" src="images/contacts/insta.png" alt="Instagram logo" title="Instagram">
-                    Instagram:<a href="https://www.instagram.com/chips_quest/#"> chips_quest</a></li>
-            </ul>
+        <nav class="nav-footer">
+            <div>
+                <img class="contacts" src="images/contacts/email.png" alt="Email logo" title="Email">
+                Email:<a href="mailto:support@ourchipsquest.ca"> support@ourchipsquest.ca</a>
+            </div>
+            <div>
+                <img class="contacts" src="images/contacts/phone.png" alt="Phone logo" title="Phone"><!-- @pixabay -->
+                Phone:<a href="tel:+11234567890"> (123) 456-7890</a>
+            </div>
+            <div>
+                <img class="contacts" src="images/contacts/insta.png" alt="Instagram logo" title="Instagram">
+                Instagram:<a href="https://www.instagram.com/chips_quest/#"> chips_quest</a>
+            </div>
         </nav>
-
         <img class="logo" src="images/logo.png" alt="Our Chips Quest Logo" title="Our Chips Quest">
+
 
         <p class="copyright">&copy; 2024 Chips Quest. All rights reserved</p>
     </footer>
