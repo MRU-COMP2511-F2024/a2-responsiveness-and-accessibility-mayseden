@@ -22,6 +22,7 @@ header {
 }
 
 /* navigation at the top of page */
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -30,12 +31,11 @@ nav {
 }
 
 nav a {
-    font-size: calc(16pt + 0.004vw);
     text-decoration: none;
     color: #333;
 }
 
-/* nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
@@ -43,7 +43,7 @@ nav a {
 nav ul li {
     display: inline;
     margin: 0 15px;
-} */
+}
 
 article {
     margin: 50px;
@@ -63,6 +63,7 @@ h3 {
 }
 
 /* our introduction */
+
 #shweta,
 #mary,
 figure img {
@@ -102,7 +103,7 @@ figure img {
     grid-template-columns: repeat(1fr, 4);
     grid-template-rows: repeat(1fr, 2);
     margin: 10px;
-    grid-gap: 10px;
+    grid-gap: 50px;
 }
 
 .our-chips div {
@@ -143,11 +144,14 @@ figure img {
 
 }
 
+.chips {
+    display: flex;
+    justify-content: center;
+}
+
 .chips img {
     grid-row: 2/3;
     width: 250px;
-    display: flex;
-    justify-content: center;
 }
 
 .our-chips:hover>.chips {
@@ -199,14 +203,10 @@ a:hover {
 @media only screen and (max-width: 590px) {
 
     /* general */
-    /*
+
     body {
         display: grid;
         grid-template-columns: 1fr;
-    }
-
-    nav a {
-        font-size: calc(16pt + 0.75vw);
     }
 
     h2 {
@@ -215,24 +215,56 @@ a:hover {
 
     section {
         margin: 5%;
-    } */
+    }
+
+    .logo {
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* header */
+
+    header {
+        height: 1.5%;
+    }
+
+
+    nav ul,
+    nav ul li {
+        display: block;
+    }
+
+    header nav {
+        top: 0;
+        left: 0;
+        align-items: normal;
+        position: absolute;
+    }
+
+
+    nav a {
+        font-size: calc(16pt + -3vw);
+    }
 
     /* images */
-    /*
+
     article img,
     figure img,
     #mary {
         width: 100%;
         margin: 3%;
-    } */
+    }
 
     /* our intro */
-    /*
+
     .about-us {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr, 4);
-        padding: 10%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about-us ul {
@@ -254,10 +286,10 @@ a:hover {
 
     #shweta-bio {
         grid-row: 4/5;
-    } */
+    }
 
     /* our chips */
-    /*
+
     .our-chips {
         display: grid;
         grid-template-columns: 1fr;
@@ -269,7 +301,6 @@ a:hover {
     #salty,
     #taco {
         font-size: 300%;
-        color: #007000;
         grid-column: 1/2;
         font-weight: bold;
         font-style: italic;
@@ -321,10 +352,10 @@ a:hover {
     .our-chips:hover>.chips {
         background-color: #48BAA4;
     }
-    */
+
 
     /* footer */
-    /*
+
     .nav-footer {
         display: flex;
         flex-direction: column;
@@ -338,7 +369,6 @@ a:hover {
     footer .logo {
         margin-top: 15%;
     }
-    */
 }
 
 
@@ -346,29 +376,55 @@ a:hover {
 @media only screen and (min-width: 590px) and (max-width: 769px) {
 
     /* general */
-    /*
+
     body {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    nav a {
-        font-size: calc(16pt + 0.75vw);
+    header {
+        display: flex;
     }
 
-    h2 {
-        font-size: calc(16pt + 0.75vw);
-    } */
+    .logo {
+        width: 15%;
+        margin: 0;
+    }
+
+    nav ul,
+    nav ul li {
+        display: inline-flex;
+    }
+
+    nav {
+        height: auto;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 14pt;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h2,
+    p {
+        font-size: 16pt;
+        text-align: center;
+    }
 
     /* images */
-    /*
     article img,
-    figure img {
-        width: 80%;
-    } */
+    figure img,
+    #mru {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+    }
 
     /* our intro */
-    /*
+
     .about-us {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -379,20 +435,61 @@ a:hover {
         grid-column: 2/3;
     }
 
-    #shweta, #mary {
-        grid-column: 1/2;
+    figcaption,
+    #mary-bio,
+    #shweta-bio {
+        font-size: 14pt;
     }
 
-    #mary, #mary-bio {
+    #shweta,
+    #mary {
+        grid-column: 1/2;
+        width: 95%;
+    }
+
+    #mary,
+    #mary-bio {
         grid-row: 1/2;
     }
 
-    #shweta, #shweta-bio {
+    #shweta,
+    #shweta-bio {
         grid-row: 2/3;
-    } */
+    }
+
+    #mru {
+        width: 30%;
+    }
+
+    /* our intro */
+
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(1fr, 2);
+    }
+
+    .about-us ul {
+        grid-column: 2/3;
+    }
+
+    #shweta,
+    #mary {
+        grid-column: 1/2;
+    }
+
+    #mary,
+    #mary-bio {
+        grid-row: 1/2;
+    }
+
+    #shweta,
+    #shweta-bio {
+        grid-row: 2/3;
+    }
 
     /* our chips */
-    /*
+
     .our-chips {
         display: grid;
         grid-template-columns: repeat(1fr, 2);
@@ -403,33 +500,42 @@ a:hover {
     #crunchy,
     #salty,
     #taco {
-        font-size: 200%;
         color: #007000;
         font-weight: bold;
         font-style: italic;
     }
 
-    #spicy, #crunchy {
+    #spicy,
+    #crunchy {
         grid-row: 1/2;
     }
 
-    #salty, #taco {
+    #salty,
+    #taco {
         grid-row: 3/4;
     }
 
-    #spicy-pic, #crunchy-pic {
+    #spicy-pic,
+    #crunchy-pic {
         grid-row: 2/3;
     }
 
-    #salty-pic, #taco-pic {
+    #salty-pic,
+    #taco-pic {
         grid-row: 4/5;
     }
 
-    #spicy, #spicy-pic, #salty, #salty-pic {
+    #spicy,
+    #spicy-pic,
+    #salty,
+    #salty-pic {
         grid-column: 1/2;
     }
 
-    #crunchy, #crunchy-pic, #taco, #taco-pic {
+    #crunchy,
+    #crunchy-pic,
+    #taco,
+    #taco-pic {
         grid-column: 2/3;
     }
 
@@ -444,10 +550,11 @@ a:hover {
 
     .our-chips:hover>.chips {
         background-color: #48BAA4;
-    } */
+    }
 
+    */
     /* footer */
-    /*
+
     .nav-footer {
         display: flex;
         flex-direction: column;
@@ -459,58 +566,71 @@ a:hover {
     }
 
     footer .logo {
-        margin-top: 15%;
-    } */
+        margin-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Large Devices */
+
 @media only screen and (min-width: 769px) {
 
     /* general */
-    header,
-    article,
-    body,
-    html,
-    p {
+
+    html{
         width: 790px;
     }
 
     html {
         background-color: white;
         z-index: -1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0 auto;
+    #content {
+        margin: auto;
     }
 
     nav a {
-        font-size: calc(16pt + 0.2vw);
+        font-size: calc(16pt + 0.1vw);
     }
 
     h2 {
         font-size: calc(16pt + 0.75vw);
+        text-align: center;
     }
 
-    article p {
-        font-size: calc(16pt + 0.75vw);
+    p {
+        font-size: calc(16pt + 0.2vw);
+        text-align: center;
     }
+
+
 
     /* images */
-    /*
+
     article img,
     figure img {
         width: 80%;
-    } */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     /* our intro */
-    /*
+    
     .about-us {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(1fr, 2);
+    }
+
+    figcaption, #shweta-bio, #mary-bio {
+        font-size: calc(16pt + -0.3vw);
     }
 
     .about-us ul {
@@ -527,10 +647,10 @@ a:hover {
 
     #shweta, #shweta-bio {
         grid-row: 2/3;
-    } */
+    } 
 
     /* our chips */
-    /*
+    
     .our-chips {
         display: grid;
         grid-template-columns: repeat(1fr, 2);
@@ -582,10 +702,10 @@ a:hover {
 
     .our-chips:hover>.chips {
         background-color: #48BAA4;
-    } */
+    } 
 
     /* footer */
-    /*
+    
     .nav-footer {
         display: flex;
         flex-direction: column;
@@ -598,6 +718,5 @@ a:hover {
 
     footer .logo {
         margin-top: 15%;
-    } */
-
+    } 
 }
