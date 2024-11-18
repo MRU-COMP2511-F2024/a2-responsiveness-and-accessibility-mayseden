@@ -63,7 +63,9 @@ h3 {
 }
 
 /* our introduction */
-#shweta,#mary, figure img {
+#shweta,
+#mary,
+figure img {
     grid-row: 1/2;
 }
 
@@ -194,9 +196,10 @@ a:hover {
 }
 
 /* Small Devices */
-@media screen and (max-width: 590px) {
+@media only screen and (max-width: 590px) {
 
-    /* general */ /*
+    /* general */
+    /*
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -214,7 +217,8 @@ a:hover {
         margin: 5%;
     } */
 
-    /* images */ /*
+    /* images */
+    /*
     article img,
     figure img,
     #mary {
@@ -222,7 +226,8 @@ a:hover {
         margin: 3%;
     } */
 
-    /* our intro */ /*
+    /* our intro */
+    /*
     .about-us {
         display: grid;
         grid-template-columns: 1fr;
@@ -251,7 +256,8 @@ a:hover {
         grid-row: 4/5;
     } */
 
-    /* our chips */ /*
+    /* our chips */
+    /*
     .our-chips {
         display: grid;
         grid-template-columns: 1fr;
@@ -317,7 +323,8 @@ a:hover {
     }
     */
 
-    /* footer */ /*
+    /* footer */
+    /*
     .nav-footer {
         display: flex;
         flex-direction: column;
@@ -336,9 +343,10 @@ a:hover {
 
 
 /* Medium Devices */
-@media screen and (min-width: 590px) and (max-width: 769px) {
+@media only screen and (min-width: 590px) and (max-width: 769px) {
 
-    /* general */ /*
+    /* general */
+    /*
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -352,13 +360,15 @@ a:hover {
         font-size: calc(16pt + 0.75vw);
     } */
 
-    /* images */ /*
+    /* images */
+    /*
     article img,
     figure img {
         width: 80%;
     } */
 
-    /* our intro */ /*
+    /* our intro */
+    /*
     .about-us {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -381,7 +391,8 @@ a:hover {
         grid-row: 2/3;
     } */
 
-    /* our chips */ /*
+    /* our chips */
+    /*
     .our-chips {
         display: grid;
         grid-template-columns: repeat(1fr, 2);
@@ -434,8 +445,9 @@ a:hover {
     .our-chips:hover>.chips {
         background-color: #48BAA4;
     } */
-   
-    /* footer */ /*
+
+    /* footer */
+    /*
     .nav-footer {
         display: flex;
         flex-direction: column;
@@ -452,10 +464,14 @@ a:hover {
 }
 
 /* Large Devices */
-@media screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
 
     /* general */
-    header, article, body, html, p {
+    header,
+    article,
+    body,
+    html,
+    p {
         width: 790px;
     }
 
@@ -482,13 +498,15 @@ a:hover {
         font-size: calc(16pt + 0.75vw);
     }
 
-    /* images */ /*
+    /* images */
+    /*
     article img,
     figure img {
         width: 80%;
     } */
 
-    /* our intro */ /*
+    /* our intro */
+    /*
     .about-us {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -511,7 +529,8 @@ a:hover {
         grid-row: 2/3;
     } */
 
-    /* our chips */ /*
+    /* our chips */
+    /*
     .our-chips {
         display: grid;
         grid-template-columns: repeat(1fr, 2);
@@ -564,8 +583,9 @@ a:hover {
     .our-chips:hover>.chips {
         background-color: #48BAA4;
     } */
-   
-    /* footer */ /*
+
+    /* footer */
+    /*
     .nav-footer {
         display: flex;
         flex-direction: column;
