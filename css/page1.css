@@ -63,18 +63,18 @@ h3 {
 }
 
 /* our introduction */
-#shweta {
+#shweta,
+#mary,
+figure img {
     grid-row: 1/2;
 }
 
 #mary {
     width: 150px;
-    grid-row: 1/2;
 }
 
 figure img {
     width: 200px;
-    grid-column: 1/2;
 }
 
 .about-us {
@@ -196,16 +196,10 @@ a:hover {
 }
 
 /* Small Devices */
-@media screen and (max-width: 590px) {}
-
-
-/* Medium Devices */
-@media screen and (min-width: 590px) and (max-width: 769px) {}
-
-/* Large Devices */
-@media screen and (min-width: 769px) {
+@media only screen and (max-width: 590px) {
 
     /* general */
+    /*
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -221,17 +215,19 @@ a:hover {
 
     section {
         margin: 5%;
-    }
+    } */
 
     /* images */
+    /*
     article img,
     figure img,
     #mary {
         width: 100%;
         margin: 3%;
-    }
+    } */
 
     /* our intro */
+    /*
     .about-us {
         display: grid;
         grid-template-columns: 1fr;
@@ -258,15 +254,15 @@ a:hover {
 
     #shweta-bio {
         grid-row: 4/5;
-    }
+    } */
 
     /* our chips */
+    /*
     .our-chips {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr;
     }
-
 
     #spicy,
     #crunchy,
@@ -276,7 +272,7 @@ a:hover {
         color: #007000;
         grid-column: 1/2;
         font-weight: bold;
-        font-style:italic;
+        font-style: italic;
     }
 
     #spicy {
@@ -325,19 +321,283 @@ a:hover {
     .our-chips:hover>.chips {
         background-color: #48BAA4;
     }
+    */
 
     /* footer */
-    
-        .nav-footer {
-            display: flex;
-            flex-direction: column;
-            align-items: space-around;
-        }
+    /*
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
 
-        .nav-footer div {
-            margin: 2%;
-        }
+    .nav-footer div {
+        margin: 2%;
+    }
 
-        footer .logo {
-            margin-top: 15%;}
+    footer .logo {
+        margin-top: 15%;
+    }
+    */
+}
+
+
+/* Medium Devices */
+@media only screen and (min-width: 590px) and (max-width: 769px) {
+
+    /* general */
+    /*
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: calc(16pt + 0.75vw);
+    }
+
+    h2 {
+        font-size: calc(16pt + 0.75vw);
+    } */
+
+    /* images */
+    /*
+    article img,
+    figure img {
+        width: 80%;
+    } */
+
+    /* our intro */
+    /*
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(1fr, 2);
+    }
+
+    .about-us ul {
+        grid-column: 2/3;
+    }
+
+    #shweta, #mary {
+        grid-column: 1/2;
+    }
+
+    #mary, #mary-bio {
+        grid-row: 1/2;
+    }
+
+    #shweta, #shweta-bio {
+        grid-row: 2/3;
+    } */
+
+    /* our chips */
+    /*
+    .our-chips {
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: 1fr 2fr 1fr 2fr;
+    }
+
+    #spicy,
+    #crunchy,
+    #salty,
+    #taco {
+        font-size: 200%;
+        color: #007000;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #spicy, #crunchy {
+        grid-row: 1/2;
+    }
+
+    #salty, #taco {
+        grid-row: 3/4;
+    }
+
+    #spicy-pic, #crunchy-pic {
+        grid-row: 2/3;
+    }
+
+    #salty-pic, #taco-pic {
+        grid-row: 4/5;
+    }
+
+    #spicy, #spicy-pic, #salty, #salty-pic {
+        grid-column: 1/2;
+    }
+
+    #crunchy, #crunchy-pic, #taco, #taco-pic {
+        grid-column: 2/3;
+    }
+
+    .chips {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .chips img {
+        width: 100%;
+    }
+
+    .our-chips:hover>.chips {
+        background-color: #48BAA4;
+    } */
+
+    /* footer */
+    /*
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .nav-footer div {
+        margin: 2%;
+    }
+
+    footer .logo {
+        margin-top: 15%;
+    } */
+}
+
+/* Large Devices */
+@media only screen and (min-width: 769px) {
+
+    /* general */
+    header,
+    article,
+    body,
+    html,
+    p {
+        width: 790px;
+    }
+
+    html {
+        background-color: white;
+        z-index: -1;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    nav a {
+        font-size: calc(16pt + 0.2vw);
+    }
+
+    h2 {
+        font-size: calc(16pt + 0.75vw);
+    }
+
+    article p {
+        font-size: calc(16pt + 0.75vw);
+    }
+
+    /* images */
+    /*
+    article img,
+    figure img {
+        width: 80%;
+    } */
+
+    /* our intro */
+    /*
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(1fr, 2);
+    }
+
+    .about-us ul {
+        grid-column: 2/3;
+    }
+
+    #shweta, #mary {
+        grid-column: 1/2;
+    }
+
+    #mary, #mary-bio {
+        grid-row: 1/2;
+    }
+
+    #shweta, #shweta-bio {
+        grid-row: 2/3;
+    } */
+
+    /* our chips */
+    /*
+    .our-chips {
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: 1fr 2fr 1fr 2fr;
+    }
+
+    #spicy,
+    #crunchy,
+    #salty,
+    #taco {
+        font-size: 200%;
+        color: #007000;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #spicy, #crunchy {
+        grid-row: 1/2;
+    }
+
+    #salty, #taco {
+        grid-row: 3/4;
+    }
+
+    #spicy-pic, #crunchy-pic {
+        grid-row: 2/3;
+    }
+
+    #salty-pic, #taco-pic {
+        grid-row: 4/5;
+    }
+
+    #spicy, #spicy-pic, #salty, #salty-pic {
+        grid-column: 1/2;
+    }
+
+    #crunchy, #crunchy-pic, #taco, #taco-pic {
+        grid-column: 2/3;
+    }
+
+    .chips {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .chips img {
+        width: 100%;
+    }
+
+    .our-chips:hover>.chips {
+        background-color: #48BAA4;
+    } */
+
+    /* footer */
+    /*
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .nav-footer div {
+        margin: 2%;
+    }
+
+    footer .logo {
+        margin-top: 15%;
+    } */
+
 }
