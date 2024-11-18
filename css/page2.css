@@ -111,7 +111,8 @@ footer {
     }
 
     .hamburger {
-        display: block; 
+        display: block;  
+
         cursor: pointer;
     }
 
