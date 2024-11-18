@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     background-color: #FD383E;
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -9,54 +10,89 @@ header {
     background-color: #48BAA4;
     padding: 10px;
     text-align: center;
+    width: 100vw; /* Ensure it spans the full width of the viewport */
+    border-bottom: 2px solid #333;
+    box-sizing: border-box;
 }
 
 .logo {
-    width: 200px;
+    width: 100px;
+    height: auto;
     display: block;
-    margin-left: auto;
-    /* centres logo */ 
-    margin-right: auto;
+    margin: 0 auto; /* Center the logo */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-
-
-nav ul.menu li {
-    margin: 5px 0;
+    margin: 5px 15px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-size: 2em;
+}
+
+.main-content p {
+    font-size: 1.2em;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    justify-content: center;
+}
+
+form {
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
 table {
-    /* centres table */
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
 }
 
 td {
-    padding: 100px;
+    padding: 10px;
+    vertical-align: top;
 }
 
 td img {
-    width: 350px;
+    width: 200px;
     background-color: #FFC163;
 }
 
 .desc {
     background-color: #FF8739;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 td div {
@@ -72,12 +108,13 @@ p span {
     font-style: italic;
 }
 
-#plantain {
-    width: 140px;
-}
-
 footer {
     background-color: #48BAA4;
+    padding: 20px;
+    text-align: center;
+    width: 100vw; /* Ensure footer spans the full width */
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .contacts {
@@ -89,60 +126,64 @@ footer {
     text-align: center;
 }
 
-
 /* Small Devices */
 @media (max-width: 590px) {
-    .menu {
-        display: flex;
+    nav ul {
         flex-direction: column;
-        background-color: #333; 
+        align-items: center;
     }
 
-    nav ul.menu {
-        display: flex;
-        flex-direction: column; /* Vertical menu for small devices */
+    .main-content {
+        padding: 10px;
     }
 
-    .menu-item {
-        padding: 15px;
-    
-        color: white;
-        text-align: center;
-        border-bottom: 1px solid #444;
+    .main-content h1 {
+        font-size: 1.5em;
     }
 
-    .hamburger {
-        display: block;  
-
-        cursor: pointer;
+    main {
+        grid-template-columns: 1fr;
     }
 
-    .grid {
-        display: block; 
+    td img {
+        width: 100%;
+    }
+
+    .main-image {
+        max-width: 100%;
     }
 }
 
-/* Medium Devices 590px */
-@media (min-width: 590px) {
-    nav ul.menu {
-        flex-direction: row; /* Horizontal menu for medium devices */
-        justify-content: center; 
+/* Medium Devices (590px to 790px) */
+@media (min-width: 590px) and (max-width: 790px) {
+    header {
+        padding: 15px;
     }
 
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); 
+    .logo {
+        width: 120px;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .main-content h1 {
+        font-size: 1.8em;
+    }
+
+    .main-content p {
+        font-size: 1.1em;
     }
 }
 
 /* Large Devices (790px and above) */
 @media (min-width: 790px) {
-    .grid-container {
-        max-width: 790px; 
-        margin: 0 auto;
-        grid-template-columns: 1fr; 
+    .main-content h1 {
+        font-size: 2em;
     }
 
-    footer {
-        background-color: #e0e0e0; /* Different footer background for large devices */
+    .main-content p {
+        font-size: 1.2em;
     }
 }
