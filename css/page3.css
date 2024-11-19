@@ -10,6 +10,7 @@ header {
     padding: 10px;
     text-align: center;
 }
+
 .main-image {
     width: 100%;
     max-width: 600px;
@@ -18,29 +19,28 @@ header {
 }
 
 .dream-chips {
-    width: 700px; 
+    width: 100%; 
     height: auto; 
     align-content: center;
 }
 
 .dream-chips2 {
-    width: 700px;
+    width: 100%;
     height: auto;
     float: right;
 }
 
 .sustainabilty {
-    width: 20px;
+    width: 100%;
     height: auto;
     align-content: center;
 }
 
 .flavor {
-    width: 250px;
+    width: 100%;
     height: auto;
-    
 }
- 
+
 h2 {
     color: #006350;
 }
@@ -53,15 +53,12 @@ legend {
     color: blue;
 }
 
-
 .logo {
     width: 200px;
     display: block;
     margin-left: auto;
-    /* centres logo */
     margin-right: auto;
 }
-
 
 nav ul {
     list-style-type: none;
@@ -78,14 +75,12 @@ nav a {
     color: #333;
 }
 
-
 article p span,
 li span {
     font-weight: bolder;
 }
 
 table {
-    /* centres table */
     margin-left: auto;
     margin-right: auto;
 }
@@ -114,10 +109,9 @@ td div {
 
 .party {
     float: right;
-    width: 500px;
+    width: 100%;
     padding: 5px;
     margin: 30px;
-    
 }
 
 p span {
@@ -139,7 +133,6 @@ p img {
     border: 1px solid #990004;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .instagram-posts img {
@@ -175,220 +168,20 @@ footer {
 
 .copyright {
     text-align: center;
-
 }
 
-
-
 /* Small Devices (less than 590px) */
-@media (max-width: 589px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-    header {
-        background-color: yellowgreen;
-        padding: 10px;
-        text-align: center;
-    }
-    .main-image {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        justify-content: center;
-    }
-    section {
-        margin: 5%;
-    }
-    
-    .dream-chips {
-        width: 700px; 
-        height: auto; 
-        align-content: center;
-        
-    }
-    
-    .dream-chips2 {
-        width: 700px;
-        height: auto;
-        float: right;
-    }
-    
-    .sustainabilty {
-        width: 20px;
-        height: auto;
-        align-content: center;
-    }
-    
-    .flavor {
-        width: 250px;
-        height: auto;
-        
-    }
-     
-    h2 {
-        color: #006350;
-    }
-    
-    h3 {
-        color: #006350;
-    }
-    
-    legend {
-        color: blue;
-    }
-    
-    
-    .logo {
-        width: 200px;
-        display: block;
-        margin-left: auto;
-        /* centres logo */
-        margin-right: auto;
-    }
-    
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: #333;
-    }
-    
-    
-    article p span,
-    li span {
-        font-weight: bolder;
-    }
-    
-    table {
-        /* centres table */
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    td {
-        padding: 100px;
-    }
-    
-    td img {
-        width: 350px;
-        background-color: #FFC163;
-    }
-    
-    .desc {
-        background-color: #FF8739;
-    }
-    
-    td div {
-        display: flex;
-        justify-content: center;
-        font-style: oblique;
-        font-weight: bolder;
-        font-size: larger;
-        color: #006350;
-    }
-    
-    .party {
-        float: right;
-        width: 500px;
-        padding: 5px;
-        margin: 30px;
-        
-    }
-    
-    p span {
-        font-style: italic;
-    }
-    
-    p img {
-        width: 150px;
-        margin: 20px;
-    }
-    
-    #plantain {
-        width: 140px;
-    }
-    
-    .instagram-posts {
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid #990004;
-        margin-left: auto;
-        margin-right: auto;
-    
-    }
-    
-    .instagram-posts img {
-        width: 200px;
-    }
-    
-    .instagram-posts th,
-    .instagram-posts td {
-        text-align: center;
-        padding: 16px;
-    }
-    
-    .instagram-posts tr:nth-child(odd) {
-        background-color: #FFB039;
-    }
-    
-    .instagram-posts tr:nth-child(even) {
-        background-color: #FFC163;
-    }
-    
-    a[target="_blank"] {
-        color: #990004;
-    }
-    
-    footer {
-        background-color: yellowgreen;
-    }
-    
-    .contacts {
-        width: 35px;
-        text-align: center;
-    }
-    
-    .copyright {
-        text-align: center;
-    
-    }
-    
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    section {
-        margin: 5%;
-    }
-
-    .logo {
-        width: 20%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* header */
-
+@media (max-width: 590px) {
     header {
         height: 1.5%;
     }
 
+    .logo {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
 
     nav ul,
     nav ul li {
@@ -396,19 +189,41 @@ footer {
     }
 
     header nav {
-        top: 0;
+        top: 2;
         left: 0;
         align-items: normal;
         position: absolute;
     }
 
-
     nav a {
-        font-size: calc(16pt + -3vw);
+        font-size: calc(25pt + -3vw);
     }
 
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-    /* footer */
+    .main-content {
+        padding: 10px;
+    }
+
+    .main-content h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    td img {
+        width: 100%;
+        grid-column: 2/3;
+    }
+
+    .main-image {
+        max-width: 100%;
+    }
 
     .nav-footer {
         display: flex;
@@ -421,91 +236,19 @@ footer {
     }
 
     footer .logo {
-        margin-top: 15%;
-    }
-}
-    nav ul {
-        flex-direction: column; /* Vertical menu */
-        align-items: center; /* Center menu items */
-    }
-
-    nav ul li {
-        display: block; 
-        margin: 5px 0; 
-    }
-
-    .dream-chips, .dream-chips2, .flavor, .sustainabilty {
-        width: 100%; 
-        height: auto; 
-    }
-
-    .party {
-        width: 100%; 
-        float: none; 
-        margin: 0; 
-    }
-
-
-/* Medium Devices (590px to 789px) */
-@media (min-width: 590px) and (max-width: 789px) {
-    nav ul {
-        flex-direction: row; /* Horizontal menu */
-        justify-content: center; /* Center menu items */
-    }
-
-    .instagram-posts {
-        display: grid; 
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px; 
-    }
-
-    .dream-chips, .dream-chips2 {
-        width: 45%;
-        height: auto;
+        margin-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-/* Large Devices (790px and above) */
-@media (min-width: 790px) {
-    header, footer {
-        margin: 0 auto; 
-    }
-
-    .dream-chips, .dream-chips2 {
-        width: 700px; 
-    }
-
-    .party {
-        width: 500px; 
-    }
-
-    .instagram-posts {
-        width: 100%; 
-        border: 1px solid; 
-        border-color: #990004;
-    }
-
-    .instagram-posts img {
-        width: 200px; 
-    }
+.instagram-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    gap: 20px;
 }
 
-/* .instagram-posts {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+.dream-chips, .dream-chips2, .flavor, .sustainabilty {
+    width: 100;
 }
-
-.post {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    width: 30%;
-    text-align: center;
-    background-color:#FD0006;
-}
-
-.post img {
-    width: 200px;
-    border-radius: 5px;
-} */

@@ -126,6 +126,8 @@ footer {
     text-align: center;
 }
 
+
+
 /* Small Devices */
 @media (max-width: 590px) {
     header {
@@ -263,6 +265,7 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+    
 }
 
 /* Large Devices (790px and above) */

@@ -129,3 +129,43 @@ This image represents a sketch of what the third page our website would look lik
 
 ### Gestalt principles write-up (point form)
 > Include images here to make your points easier to understand (and you will have to write less too!)
+
+
+ASSIGNMENT 2
+# Accessibility Improvements
+
+## Manual Analysis
+During the manual analysis, the following categories of issues were identified:
+- **Color Contrast:** Several elements had insufficient contrast ratios, making text difficult to read.
+- **Alt Text:** Some images were missing alt attributes, hindering screen reader users.
+
+
+## Automated Analysis
+Using the WAVE tool, additional issues were identified:
+There were identified 1 Suspicious alternative text, 1 Broken for the same-page link, 3 Redundant title text and 1 Layout table
+
+## Changes Made
+To address the identified issues, we made changes by adjusting the colors to ensure text is legible against its background, Provided descriptive alt attributes for all relevant images.
+
+
+## Connection to Gestalt Principles
+The accessibility changes connect with Gestalt principles in the following ways:
+- Figure-Ground: Improved color contrast helps distinguish foreground content from the background.
+- Similarity: Consistent use of design elements makes the interface more predictable and easier to navigate.
+- Proximity: Grouping related elements together such as form fields and their labels,improves understanding and navigation.
+
+Closure:
+
+Clearly defined and well-labeled elements allow users to perceive incomplete shapes or elements as complete, which can reduce confusion and improve the overall user experience.
+
+Continuity:
+
+A predictable and structured layout guides the user’s eye smoothly from one section to the next, making it easier for them to follow and understand the content flow.
+
+Common Fate:
+
+Interactive elements like buttons and links that are styled and behave consistently are perceived as part of the same group, reinforcing their functionality and making them easier to use.
+
+Symmetry:
+
+Balanced and symmetrical layouts create a sense of harmony and order, making the interface more aesthetically pleasing and easier to navigate.
