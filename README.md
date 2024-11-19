@@ -145,7 +145,7 @@ Using the WAVE tool, additional issues were identified:
 There were identified 1 Suspicious alternative text, 1 Broken for the same-page link, 3 Redundant title text and 1 Layout table
 
 ## Changes Made
-To address the identified issues, we made changes by adjusting the colors to ensure text is legible against its background, Provided descriptive alt attributes for all relevant images.
+To address the identified issues, we made changes by adjusting the text colors mostly to black, to ensure text is legible against its background, and also provided descriptive alt attributes for all relevant images.
 
 
 ## Connection to Gestalt Principles
