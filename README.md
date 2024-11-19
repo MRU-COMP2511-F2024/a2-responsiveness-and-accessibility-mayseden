@@ -3,16 +3,16 @@
 
 Manual
 	We identified images which had the same text for alternative text and title. There were images that did not have a comprehensive explanation on what the image contained.
-	We also identified colours that were did not stand out due to lack of contrast. 
+	We also identified colours that were did not stand out due to lack of contrast,which made text difficult to read
 
 Automated
-	The website identified where there a lack of and possible heading. It detected redundent issues like links. 
+	The website identified where there a lack of and possible heading. It detected redundant issues like links and a layout table as well
 
 # What kinds of changes did you have to make (I do not want a list here). Generalize the types of issues that you created when building your website, and then the general type of changes that you made to resolve those issues.
 
-	We added new elements like header and improve on the description of attributes. We also swapped for better display option like higher contrast of colour for clear view.
+To address the identified issues, We added new elements like header and improve on the description of attributes. We also swapped for better display option like higher contrast of colour for clear view by using the colour black to ensure that text is legible against its background.
 
-	We kept the "redundent" links on page 1 as we wanted to implement a link that goes directly to a specific area on another page but were unable to do so.
+	We kept the "redundant" links on page 1 as we wanted to implement a link that goes directly to a specific area on another page but were unable to do so.
 
 
 # How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
@@ -175,22 +175,5 @@ This image represents a sketch of what the third page our website would look lik
 > Include images here to make your points easier to understand (and you will have to write less too!)
 
 
-ASSIGNMENT 2 
-
-# Accessibility Improvements
-
-## Manual Analysis
-During the manual analysis, the following categories of issues were identified:
-- **Color Contrast:** Several elements had insufficient contrast ratios, making text difficult to read.
-- **Alt Text:** Some images were missing alt attributes, hindering screen reader users.
 
 
-## Automated Analysis
-Using the WAVE tool, additional issues were identified:
-There were identified 1 Suspicious alternative text, 1 Broken for the same-page link, 3 Redundant title text and 1 Layout table
-
-## Changes Made
-To address the identified issues, we made changes by adjusting the text colors mostly to black, to ensure text is legible against its background, and also provided descriptive alt attributes for all relevant images.
-
-
-## Connection to Gestalt Principles
