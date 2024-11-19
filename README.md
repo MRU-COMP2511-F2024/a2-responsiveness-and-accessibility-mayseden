@@ -1,3 +1,29 @@
+# ASsignment 2
+# Document the category of issues that you identified through the manual and automated analysis above
+
+Manual
+	We identified images which had the same text for alternative text and title. There were images that did not have a comprehensive explanation on what the image contained.
+	We also identified colours that were did not stand out due to lack of contrast. 
+
+Automated
+	The website identified where there a lack of and possible heading. It detected redundent issues like links. 
+
+# What kinds of changes did you have to make (I do not want a list here). Generalize the types of issues that you created when building your website, and then the general type of changes that you made to resolve those issues.
+
+	We added new elements like header and improve on the description of attributes. We also swapped for better display option like higher contrast of colour for clear view.
+
+	We kept the "redundent" links on page 1 as we wanted to implement a link that goes directly to a specific area on another page but were unable to do so.
+
+
+# How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
+
+	The colour and headings of the texts play a part in continunity and closure. As the colour continues, it is easy to see that the topic at hand is the same. When the colour changes and a larger sized heading element is seen, it can be perceived that a new subject is about to begin.
+
+	Proximity of certain elements are also taken into account so that redundant elements, like links that point to the same website, would be removed. This prevents confusion as separate items should refer to separate places, especially when they are close together. Users may be confused as to why they point to the same place.
+
+
+# Assignment 1
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/LO5PCc12)
 # Instructions
 

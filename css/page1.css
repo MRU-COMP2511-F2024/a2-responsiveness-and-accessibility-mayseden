@@ -57,12 +57,8 @@ article {
     padding: 10px;
 }
 
-h2, h1{
-    color: #09deb3;
-}
-
-h3 {
-    color: #006350;
+h2, h1, h3{
+    color: #144841;
 }
 
 
@@ -125,7 +121,7 @@ figure img {
     justify-content: baseline;
     align-items: center;
     font-size: 30px;
-    color: #006350;
+    color: #144841;
 }
 
 
@@ -854,6 +850,6 @@ a:hover {
 
 
     footer .logo {
-        margin-top: 15%;
+        margin-top: 30%;
     }
 }
