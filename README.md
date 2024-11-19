@@ -16,10 +16,28 @@ Automated
 
 
 # How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?
-
+- Figure-Ground: Improved color contrast helps distinguish foreground content from the background.
+- Similarity: Consistent use of design elements makes the interface more predictable and easier to navigate.
+	The accessibility changes connect with Gestalt principles in the following ways:
 	The colour and headings of the texts play a part in continunity and closure. As the colour continues, it is easy to see that the topic at hand is the same. When the colour changes and a larger sized heading element is seen, it can be perceived that a new subject is about to begin.
 
 	Proximity of certain elements are also taken into account so that redundant elements, like links that point to the same website, would be removed. This prevents confusion as separate items should refer to separate places, especially when they are close together. Users may be confused as to why they point to the same place.
+Closure:
+
+Clearly defined and well-labeled elements allow users to perceive incomplete shapes or elements as complete, which can reduce confusion and improve the overall user experience.
+
+Continuity:
+
+A predictable and structured layout guides the user’s eye smoothly from one section to the next, making it easier for them to follow and understand the content flow.
+
+Common Fate:
+
+Interactive elements like buttons and links that are styled and behave consistently are perceived as part of the same group, reinforcing their functionality and making them easier to use.
+
+Symmetry:
+
+Balanced and symmetrical layouts create a sense of harmony and order, making the interface more aesthetically pleasing and easier to navigate.
+
 
 
 # Assignment 1
@@ -176,23 +194,3 @@ To address the identified issues, we made changes by adjusting the text colors m
 
 
 ## Connection to Gestalt Principles
-The accessibility changes connect with Gestalt principles in the following ways:
-- Figure-Ground: Improved color contrast helps distinguish foreground content from the background.
-- Similarity: Consistent use of design elements makes the interface more predictable and easier to navigate.
-- Proximity: Grouping related elements together such as form fields and their labels,improves understanding and navigation.
-
-Closure:
-
-Clearly defined and well-labeled elements allow users to perceive incomplete shapes or elements as complete, which can reduce confusion and improve the overall user experience.
-
-Continuity:
-
-A predictable and structured layout guides the user’s eye smoothly from one section to the next, making it easier for them to follow and understand the content flow.
-
-Common Fate:
-
-Interactive elements like buttons and links that are styled and behave consistently are perceived as part of the same group, reinforcing their functionality and making them easier to use.
-
-Symmetry:
-
-Balanced and symmetrical layouts create a sense of harmony and order, making the interface more aesthetically pleasing and easier to navigate.
