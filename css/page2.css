@@ -13,13 +13,16 @@ header {
     width: 100vw; /* Ensure it spans the full width of the viewport */
     border-bottom: 2px solid #333;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     width: 100px;
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the logo */
+    margin: 0; /* Remove centering since navigation is to the right */
 }
 
 nav ul {
@@ -27,8 +30,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: flex-end; /* Move the navigation to the right */
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 nav ul li {
@@ -66,9 +69,6 @@ form {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
     padding: 20px;
 }
 
@@ -128,6 +128,33 @@ footer {
 
 /* Small Devices */
 @media (max-width: 590px) {
+    header {
+        height: 1.5%;
+    }
+
+    .logo {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    nav ul,
+    nav ul li {
+        display: block;
+    }
+
+    header nav {
+        top: 2;
+        left: 0;
+        align-items: normal;
+        position: absolute;
+    }
+
+    nav a {
+        font-size: calc(25pt + -3vw);
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -152,6 +179,22 @@ footer {
     .main-image {
         max-width: 100%;
     }
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .nav-footer div {
+        margin: 2%;
+    }
+
+    footer .logo {
+        margin-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Medium Devices (590px to 790px) */
@@ -175,10 +218,85 @@ footer {
     .main-content p {
         font-size: 1.1em;
     }
+
+    .our-chips {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+        gap: 20px;
+    }
+
+    #fiery,
+    #crunchiness,
+    #salted,
+    #taco {
+        color: #007000;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .chips {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .chips img {
+        width: 100%;
+    }
+
+    .our-chips:hover>.chips {
+        background-color: #48BAA4;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .nav-footer div {
+        margin: 2%;
+    }
+
+    footer .logo {
+        margin-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Large Devices (790px and above) */
-@media (min-width: 790px) {
+@media only screen and (min-width: 769px) {
+    html{
+        width: 790px;
+    }
+
+    header {
+        display: flex;
+        width: 790px;
+    }
+
+    html {
+        background-color: white;
+        z-index: -1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        background-color: #FD383E; /* Plain background color for the side spaces */
+    
+    
+    main {
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
+    .main-content, footer {
+        max-width: 790px;
+        margin: 0 auto;
+    }
+
     .main-content h1 {
         font-size: 2em;
     }
@@ -186,4 +304,28 @@ footer {
     .main-content p {
         font-size: 1.2em;
     }
+
+    .main-image {
+        width: 100%;
+        max-width: 790px;
+    }
+
+    }
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+    .nav-footer div {
+        margin: 2%;
+    }
+
+    footer .logo {
+        margin-top: 3%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+    
