@@ -4,13 +4,15 @@ body {
     font-family: Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
+
 }
 
 header {
     background-color: #48BAA4;
     padding: 10px;
     text-align: center;
-    width: 100vw; /* Ensure it spans the full width of the viewport */
+    width: 100vw;
+    /* Ensure it spans the full width of the viewport */
     border-bottom: 2px solid #333;
     box-sizing: border-box;
     display: flex;
@@ -22,7 +24,8 @@ header {
     width: 100px;
     height: auto;
     display: block;
-    margin: 0; /* Remove centering since navigation is to the right */
+    margin: 0;
+    /* Remove centering since navigation is to the right */
 }
 
 nav ul {
@@ -30,7 +33,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end; /* Move the navigation to the right */
+    justify-content: flex-end;
+    /* Move the navigation to the right */
     flex-wrap: wrap;
 }
 
@@ -104,6 +108,20 @@ td div {
     color: #006350;
 }
 
+#fiery,
+#crunchiness,
+#salted,
+#taco {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.custom-link {
+    color: black;
+}
+
+
 p span {
     font-style: italic;
 }
@@ -112,7 +130,8 @@ footer {
     background-color: #48BAA4;
     padding: 20px;
     text-align: center;
-    width: 100vw; /* Ensure footer spans the full width */
+    width: 100vw;
+    /* Ensure footer spans the full width */
     margin: 0;
     box-sizing: border-box;
 }
@@ -181,6 +200,7 @@ footer {
     .main-image {
         max-width: 100%;
     }
+
     .nav-footer {
         display: flex;
         flex-direction: column;
@@ -223,15 +243,17 @@ footer {
 
     .our-chips {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2x2 grid */
         gap: 20px;
+        color: black;
     }
 
     #fiery,
     #crunchiness,
     #salted,
     #taco {
-        color: #007000;
+        color: black;
         font-weight: bold;
         font-style: italic;
     }
@@ -265,12 +287,12 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
 }
 
 /* Large Devices (790px and above) */
 @media only screen and (min-width: 769px) {
-    html{
+    html {
         width: 790px;
     }
 
@@ -286,34 +308,38 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
     body {
-        background-color: #FD383E; /* Plain background color for the side spaces */
-    
-    
-    main {
-        max-width: 790px;
-        margin: 0 auto;
+        background-color: #FD383E;
+        /* Plain background color for the side spaces */
+
+
+        main {
+            max-width: 790px;
+            margin: 0 auto;
+        }
+
+        .main-content,
+        footer {
+            max-width: 790px;
+            margin: 0 auto;
+        }
+
+        .main-content h1 {
+            font-size: 2em;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+        }
+
+        .main-image {
+            width: 100%;
+            max-width: 790px;
+        }
+
     }
 
-    .main-content, footer {
-        max-width: 790px;
-        margin: 0 auto;
-    }
-
-    .main-content h1 {
-        font-size: 2em;
-    }
-
-    .main-content p {
-        font-size: 1.2em;
-    }
-
-    .main-image {
-        width: 100%;
-        max-width: 790px;
-    }
-
-    }
     .nav-footer {
         display: flex;
         flex-direction: column;
@@ -331,4 +357,3 @@ footer {
         margin-right: auto;
     }
 }
-    
