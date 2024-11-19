@@ -1,4 +1,4 @@
-/* Website colour scheme: https://paletton.com/#uid=60o0p0kw0w0jyC+oRxVy4oIDfjr 
+/* Website colour scheme: https://paletton.com/#uid=60o0p0kw0w0jyC+oRxVy4oIDfjr
 Remove background of image: https://www.remove.bg/ */
 body {
     background-color: #FD383E;
@@ -7,21 +7,24 @@ body {
     padding: 0;
 }
 
+
 header {
     background-color: #ffcc00;
     padding: 10px;
     text-align: center;
 }
 
+
 .logo {
     width: 200px;
     display: block;
     margin-left: auto;
-    /* centres logo */
     margin-right: auto;
 }
 
+
 /* navigation at the top of page */
+
 
 nav {
     display: flex;
@@ -30,39 +33,48 @@ nav {
     height: 100px;
 }
 
+
 nav a {
     text-decoration: none;
     color: #333;
 }
+
 
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 
 article {
     margin: 50px;
     padding: 10px;
 }
 
+
 h2 {
     color: #333;
 }
 
+
 h2 {
     color: #006350;
 }
+
 
 h3 {
     color: #006350;
 }
 
+
 /* our introduction */
+
 
 #shweta,
 #mary,
@@ -70,13 +82,16 @@ figure img {
     grid-row: 1/2;
 }
 
+
 #mary {
     width: 150px;
 }
 
+
 figure img {
     width: 200px;
 }
+
 
 .about-us {
     display: grid;
@@ -84,19 +99,24 @@ figure img {
     grid-template-rows: repeat(1fr, 2);
 }
 
+
 .about-us ul {
     grid-column: 2/3;
 }
+
 
 #mary-bio {
     grid-row: 1/2;
 }
 
+
 #shweta-bio {
     grid-row: 2/3;
 }
 
+
 /* our chips selection */
+
 
 .our-chips {
     display: grid;
@@ -106,6 +126,7 @@ figure img {
     grid-gap: 50px;
 }
 
+
 .our-chips div {
     display: flex;
     justify-content: baseline;
@@ -114,25 +135,30 @@ figure img {
     color: #006350;
 }
 
+
 #spicy,
 #spicy-pic {
     grid-column: 1/2;
 }
+
 
 #crunchy,
 #crunchy-pic {
     grid-column: 2/3;
 }
 
+
 #salty,
 #salty-pic {
     grid-column: 3/4;
 }
 
+
 #taco,
 #taco-pic {
     grid-column: 4/5;
 }
+
 
 #spicy,
 #crunchy,
@@ -142,80 +168,92 @@ figure img {
     display: flex;
     justify-content: center;
 
+
 }
+
 
 .chips {
     display: flex;
     justify-content: center;
 }
 
+
 .chips img {
     grid-row: 2/3;
     width: 250px;
 }
 
+
 .our-chips:hover>.chips {
     background-color: #48BAA4;
 }
 
+
 /* footers */
+
 
 footer {
     background-color: #ffcc00;
 }
+
 
 .contacts {
     width: 35px;
     text-align: center;
 }
 
+
 .copyright {
     text-align: center;
 }
+
 
 main {
     padding: 20px;
 }
 
+
 .contact-icon {
     width: 20px;
-    /* Set the width of the icons */
     height: 20px;
-    /* Set the height of the icons */
     vertical-align: middle;
-    /* Align the icons vertically with the text */
     margin-right: 5px;
-    /* Add some space between the icon and the text */
 }
+
 
 a {
     color: blue;
-    /* we can change the text color to something else if you want */
     text-decoration: underline;
 }
 
+
 a:hover {
     color: darkblue;
-    /* and also this */
 }
+
 
 /* Small Devices */
 @media only screen and (max-width: 590px) {
 
+
     /* general */
+
 
     body {
         display: grid;
         grid-template-columns: 1fr;
     }
 
+
     h2 {
         text-align: center;
     }
 
+
     section {
         margin: 5%;
     }
+
 
     .logo {
         width: 20%;
@@ -223,7 +261,9 @@ a:hover {
         margin-right: auto;
     }
 
+
     /* header */
+
 
     header {
         height: 1.5%;
@@ -234,6 +274,7 @@ a:hover {
     nav ul li {
         display: block;
     }
+
 
     header nav {
         top: 0;
@@ -247,7 +288,9 @@ a:hover {
         font-size: calc(16pt + -3vw);
     }
 
+
     /* images */
+
 
     article img,
     figure img,
@@ -256,7 +299,9 @@ a:hover {
         margin: 3%;
     }
 
+
     /* our intro */
+
 
     .about-us {
         display: grid;
@@ -267,34 +312,42 @@ a:hover {
         margin-right: auto;
     }
 
+
     .about-us ul {
         grid-column: 1/2;
         margin: 5%;
     }
 
+
     #mary {
         grid-row: 1/2;
     }
+
 
     #shweta {
         grid-row: 3/4;
     }
 
+
     #mary-bio {
         grid-row: 2/3;
     }
+
 
     #shweta-bio {
         grid-row: 4/5;
     }
 
+
     /* our chips */
+
 
     .our-chips {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr 0.5fr 2fr;
     }
+
 
     #spicy,
     #crunchy,
@@ -306,38 +359,48 @@ a:hover {
         font-style: italic;
     }
 
+
     #spicy {
         grid-row: 1/2;
     }
+
 
     #spicy-pic {
         grid-row: 2/3;
     }
 
+
     #crunchy {
         grid-row: 3/4;
     }
+
 
     #crunchy-pic {
         grid-row: 4/5;
     }
 
+
     #salty {
         grid-row: 5/6;
     }
 
+
     #salty-pic {
+
 
         grid-row: 6/7;
     }
+
 
     #taco {
         grid-row: 7/8;
     }
 
+
     #taco-pic {
         grid-row: 8/9;
     }
+
 
     .chips {
         grid-column: 1/2;
@@ -345,16 +408,21 @@ a:hover {
         margin-right: auto;
     }
 
+
     .chips img {
         width: 100%;
     }
+
 
     .our-chips:hover>.chips {
         background-color: #48BAA4;
     }
 
 
+
+
     /* footer */
+
 
     .nav-footer {
         display: flex;
@@ -362,9 +430,11 @@ a:hover {
         align-items: space-around;
     }
 
+
     .nav-footer div {
         margin: 2%;
     }
+
 
     footer .logo {
         margin-top: 15%;
@@ -372,34 +442,43 @@ a:hover {
 }
 
 
+
+
 /* Medium Devices */
 @media only screen and (min-width: 590px) and (max-width: 769px) {
 
+
     /* general */
+
 
     body {
         display: grid;
         grid-template-columns: 1fr;
     }
 
+
     header {
         display: flex;
     }
+
 
     .logo {
         width: 15%;
         margin: 0;
     }
 
+
     nav ul,
     nav ul li {
         display: inline-flex;
     }
 
+
     nav {
         height: auto;
         width: 100%;
     }
+
 
     nav a {
         font-size: 14pt;
@@ -407,11 +486,13 @@ a:hover {
         justify-content: space-around;
     }
 
+
     h2,
     p {
         font-size: 16pt;
         text-align: center;
     }
+
 
     /* images */
     article img,
@@ -423,7 +504,9 @@ a:hover {
         width: 65%;
     }
 
+
     /* our intro */
+
 
     .about-us {
         display: grid;
@@ -431,9 +514,11 @@ a:hover {
         grid-template-rows: repeat(1fr, 2);
     }
 
+
     .about-us ul {
         grid-column: 2/3;
     }
+
 
     figcaption,
     #mary-bio,
@@ -441,27 +526,33 @@ a:hover {
         font-size: 14pt;
     }
 
+
     #shweta,
     #mary {
         grid-column: 1/2;
         width: 95%;
     }
 
+
     #mary,
     #mary-bio {
         grid-row: 1/2;
     }
+
 
     #shweta,
     #shweta-bio {
         grid-row: 2/3;
     }
 
+
     #mru {
         width: 30%;
     }
 
+
     /* our intro */
+
 
     .about-us {
         display: grid;
@@ -469,32 +560,39 @@ a:hover {
         grid-template-rows: repeat(1fr, 2);
     }
 
+
     .about-us ul {
         grid-column: 2/3;
     }
+
 
     #shweta,
     #mary {
         grid-column: 1/2;
     }
 
+
     #mary,
     #mary-bio {
         grid-row: 1/2;
     }
+
 
     #shweta,
     #shweta-bio {
         grid-row: 2/3;
     }
 
+
     /* our chips */
+
 
     .our-chips {
         display: grid;
         grid-template-columns: repeat(1fr, 2);
         grid-template-rows: 1fr 2fr 1fr 2fr;
     }
+
 
     #spicy,
     #crunchy,
@@ -505,25 +603,30 @@ a:hover {
         font-style: italic;
     }
 
+
     #spicy,
     #crunchy {
         grid-row: 1/2;
     }
+
 
     #salty,
     #taco {
         grid-row: 3/4;
     }
 
+
     #spicy-pic,
     #crunchy-pic {
         grid-row: 2/3;
     }
 
+
     #salty-pic,
     #taco-pic {
         grid-row: 4/5;
     }
+
 
     #spicy,
     #spicy-pic,
@@ -532,6 +635,7 @@ a:hover {
         grid-column: 1/2;
     }
 
+
     #crunchy,
     #crunchy-pic,
     #taco,
@@ -539,21 +643,26 @@ a:hover {
         grid-column: 2/3;
     }
 
+
     .chips {
         margin-left: auto;
         margin-right: auto;
     }
 
+
     .chips img {
         width: 100%;
     }
+
 
     .our-chips:hover>.chips {
         background-color: #48BAA4;
     }
 
+
     */
     /* footer */
+
 
     .nav-footer {
         display: flex;
@@ -561,9 +670,11 @@ a:hover {
         align-items: space-around;
     }
 
+
     .nav-footer div {
         margin: 2%;
     }
+
 
     footer .logo {
         margin-top: 3%;
@@ -573,15 +684,20 @@ a:hover {
     }
 }
 
+
 /* Large Devices */
+
 
 @media only screen and (min-width: 769px) {
 
+
     /* general */
+
 
     html{
         width: 790px;
     }
+
 
     html {
         background-color: white;
@@ -591,18 +707,22 @@ a:hover {
         margin-right: auto;
     }
 
+
     #content {
         margin: auto;
     }
+
 
     nav a {
         font-size: calc(16pt + 0.1vw);
     }
 
+
     h2 {
         font-size: calc(16pt + 0.75vw);
         text-align: center;
     }
+
 
     p {
         font-size: calc(16pt + 0.2vw);
@@ -611,7 +731,11 @@ a:hover {
 
 
 
+
+
+
     /* images */
+
 
     article img,
     figure img {
@@ -621,41 +745,49 @@ a:hover {
         margin-right: auto;
     }
 
+
     /* our intro */
-    
+   
     .about-us {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(1fr, 2);
     }
 
+
     figcaption, #shweta-bio, #mary-bio {
         font-size: calc(16pt + -0.3vw);
     }
+
 
     .about-us ul {
         grid-column: 2/3;
     }
 
+
     #shweta, #mary {
         grid-column: 1/2;
     }
+
 
     #mary, #mary-bio {
         grid-row: 1/2;
     }
 
+
     #shweta, #shweta-bio {
         grid-row: 2/3;
-    } 
+    }
+
 
     /* our chips */
-    
+   
     .our-chips {
         display: grid;
         grid-template-columns: repeat(1fr, 2);
         grid-template-rows: 1fr 2fr 1fr 2fr;
     }
+
 
     #spicy,
     #crunchy,
@@ -667,56 +799,68 @@ a:hover {
         font-style: italic;
     }
 
+
     #spicy, #crunchy {
         grid-row: 1/2;
     }
+
 
     #salty, #taco {
         grid-row: 3/4;
     }
 
+
     #spicy-pic, #crunchy-pic {
         grid-row: 2/3;
     }
+
 
     #salty-pic, #taco-pic {
         grid-row: 4/5;
     }
 
+
     #spicy, #spicy-pic, #salty, #salty-pic {
         grid-column: 1/2;
     }
 
+
     #crunchy, #crunchy-pic, #taco, #taco-pic {
         grid-column: 2/3;
     }
+
 
     .chips {
         margin-left: auto;
         margin-right: auto;
     }
 
+
     .chips img {
         width: 100%;
     }
 
+
     .our-chips:hover>.chips {
         background-color: #48BAA4;
-    } 
+    }
+
 
     /* footer */
-    
+   
     .nav-footer {
         display: flex;
         flex-direction: column;
         align-items: space-around;
     }
 
+
     .nav-footer div {
         margin: 2%;
     }
 
+
     footer .logo {
         margin-top: 15%;
-    } 
+    }
 }
