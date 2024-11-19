@@ -157,7 +157,8 @@ This image represents a sketch of what the third page our website would look lik
 > Include images here to make your points easier to understand (and you will have to write less too!)
 
 
-ASSIGNMENT 2
+ASSIGNMENT 2 
+
 # Accessibility Improvements
 
 ## Manual Analysis
