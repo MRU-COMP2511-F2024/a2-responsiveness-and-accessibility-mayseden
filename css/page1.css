@@ -57,19 +57,8 @@ article {
     padding: 10px;
 }
 
-
-h2 {
-    color: #333;
-}
-
-
-h2 {
-    color: #006350;
-}
-
-
-h3 {
-    color: #006350;
+h2, h1, h3{
+    color: #144841;
 }
 
 
@@ -132,7 +121,7 @@ figure img {
     justify-content: baseline;
     align-items: center;
     font-size: 30px;
-    color: #006350;
+    color: #144841;
 }
 
 
@@ -245,7 +234,7 @@ a:hover {
     }
 
 
-    h2 {
+    h2, h1 {
         text-align: center;
     }
 
@@ -487,7 +476,7 @@ a:hover {
     }
 
 
-    h2,
+    h2, h1, 
     p {
         font-size: 16pt;
         text-align: center;
@@ -718,7 +707,7 @@ a:hover {
     }
 
 
-    h2 {
+    h2, h1{
         font-size: calc(16pt + 0.75vw);
         text-align: center;
     }
@@ -861,6 +850,6 @@ a:hover {
 
 
     footer .logo {
-        margin-top: 15%;
+        margin-top: 30%;
     }
 }
